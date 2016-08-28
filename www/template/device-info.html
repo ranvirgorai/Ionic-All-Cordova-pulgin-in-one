@@ -1,0 +1,16 @@
+<ion-view view-title="Device Detail">
+	<ion-content>
+<p><b>Avilable: </b> {{devdata.available}}</p>
+<p><b>Platform: </b> {{devdata.platform}}</p>
+<p><b>Version: </b> {{devdata.version}}</p>
+<p><b>Uuid: </b> {{devdata.uuid}}</p>
+<p><b>Cordova: </b> {{devdata.cordova}}</p>
+<p><b>Model: </b> {{devdata.model}}</p>
+<p><b>Manufacturer: </b> {{devdata.manufacturer}}</p>
+<p><b>Virtual: </b> {{devdata.isVirtual}}</p>
+<p><b>Serial </b> {{devdata.serial}}</p>
+ <button class="button button-block button-royal" ng-click="sendInfo()">
+Submit Info
+</button>
+</ion-content>
+	</ion-view>

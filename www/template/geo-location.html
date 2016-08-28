@@ -1,0 +1,11 @@
+<ion-view view-title="My Location">
+	<ion-content scroll="false">
+		<b>Latitude:</b> {{lat}}<br>
+		<b>longitude: </b>{{long}}
+		<!-- Watch Latitude: {{wlat}}
+		Watch longitude: {{wlong}}-->
+		Error Msg: {{emsg}}<button ng-click="showLoc()" class="button">Show</button>
+
+		<div id="map"></div>
+	</ion-content>
+	</ion-view>

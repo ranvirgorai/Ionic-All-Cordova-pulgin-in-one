@@ -1,9 +1,14 @@
 <ion-view view-title="First Page">
 	<ion-content>
-<h4>Welcome in First Page !</h4>
+<h4 align="center">Welcome in First Page !</h4>
+Input String<input type="text" ng-model="inpStr">
+Output String<input type="text" ng-model="opStr">
+<button class="button  button-balanced" ng-click="processStr(inpStr)">
+Process String
+</button>
+
 <a  ui-sref="pagetwo"><button class="button button-block button-positive">
   <i class="ion ion-chevron-right"></i>
 </button></a>
-<ui-view></ui-view>
 </ion-content>
 	</ion-view>

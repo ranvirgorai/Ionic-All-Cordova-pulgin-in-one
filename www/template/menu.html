@@ -1,0 +1,10 @@
+<ion-view view-title="Menu Page">
+	<ion-content>
+
+<div ng-repeat="menuItem in menuList">
+<a  ui-sref={{menuItem.url}}> <button class="button button-block button-royal">{{menuItem.title}}
+<i class="ion ion-chevron-right"></i></button></a>
+
+</div>
+</ion-content>
+</ion-view>

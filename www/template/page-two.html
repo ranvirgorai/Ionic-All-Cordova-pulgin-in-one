@@ -1,8 +1,36 @@
 <ion-view view-title="Second Page">
-	<ion-content>
-<h4>Welcome in Second Page !</h4>
-<a  ui-sref="pagethree"><button class="button button-block button-balanced">
+<ion-content>
+
+<ion-list align="center"
+     		show-delete="shouldShowDelete"
+          show-reorder="shouldShowReorder"
+          can-swipe="listCanSwipe">
+  <ion-item ng-repeat="dev in deviceDetail">
+
+    <a style="text-decoration:none" ui-sref="detailview({serial: dev.device.serial})"> {{dev.device.manufacturer}}</a>
+ 	<ion-option-button class="button-positive" ng-click="share(dev.device.serial)">
+      Share
+    </ion-option-button>
+
+    <ion-option-button class="button-info"
+                       ng-click="edit(dev.device.serial)">Edit
+    </ion-option-button>
+
+    <ion-delete-button class="ion-minus-circled"
+                       ng-click="items.splice($index, 1)">
+    </ion-delete-button>
+
+    <ion-reorder-button class="ion-navicon"
+                        on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+    </ion-reorder-button>
+
+  </ion-item>
+</ion-list>
+
+
+
+<a   ui-sref="pagethree"><button  class="button  button-block button-balanced">
 <i class="ion ion-chevron-right"></i>
 </button></a>
 </ion-content>
-	</ion-view>
+</ion-view>

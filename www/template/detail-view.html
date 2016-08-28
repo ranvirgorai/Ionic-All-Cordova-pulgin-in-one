@@ -1,0 +1,25 @@
+<ion-view view-title="Detail View">
+	<ion-content>
+<div ng-repeat="div in deviceDetail" >
+<div ng-if="div.device.serial==deviceSerial.serial">
+<ion-list align="center" limitTo: 1>
+<ion-item  >
+<p> <b>Model: </b>{{div.device.model}}</p>
+<img src="img/img.jpg"/ width="200px" ng-if="div.device.model=='Redmi Note 3'">
+<img src="img/img2.jpg"/ width="200px" ng-if="div.device.model=='ONE E1003'">
+<img src="img/img3.jpg"/ width="200px" ng-if="div.device.model=='MotoE2'">
+<p> <b>Manufacturer: </b>{{div.device.manufacturer}}</p>
+<p> <b>Platform: </b>{{div.device.platform}}</p>
+<p> <b>Uid: </b>{{div.device.uuid}}</p>
+<p> <b>Version: </b>{{div.device.version}}</p>
+</ion-item>
+</ion-list>
+</div>
+</div>
+<a  ui-sref="pagetwo"> <button class="button button-block button-royal">
+<i class="ion ion-chevron-left"></i>
+</button></a>
+</ion-content>
+	</ion-view>
+
+

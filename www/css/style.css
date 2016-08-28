@@ -1,1 +1,8 @@
-/* Empty. Add your own CSS if you like */
+a, u {
+    text-decoration: none;
+}
+
+#map {
+        height: 90%;
+        width: 100%;
+      }
