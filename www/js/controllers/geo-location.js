@@ -72,9 +72,9 @@ function onError(error) {
 navigator.geolocation.getCurrentPosition(onSuccess, onError);
 */
 function onSuccess(position) {
-      $scope.lat  = position.coords.latitude;
-      $scope.long = position.coords.longitude;
+      $scope.lat  = position.coords;
       initMap(position.coords);
+      console.log(position);
 }
 
 // onError Callback receives a PositionError object
