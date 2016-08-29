@@ -2,6 +2,9 @@ angular.module('starter')
 
 .controller('menuCtrl',function($scope){
 var menuList=[
+	{ title:"Device Motion",url:"devicemotion"},
+	{ title:"barcode",url:"barcode"},
+	{ title:"Battery",  url:"battery"},
 	{ title:"Service Test",  url:"pageone"},
 	{ title:"Detail View",  url:"pagetwo"},
 	{ title:"Ui Serf",  url:"pagethree"},

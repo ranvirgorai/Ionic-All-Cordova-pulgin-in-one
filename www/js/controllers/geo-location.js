@@ -13,6 +13,12 @@ angular.module('starter')
           zoom: 8
         });
       }
+
+
+
+
+
+
 /*
   var posOptions = {maximumAge: 3000,timeout: 10000, enableHighAccuracy: true};       // ionic Cordova Method to Get lloc
   $cordovaGeolocation.getCurrentPosition(posOptions)

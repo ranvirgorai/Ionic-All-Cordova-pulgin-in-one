@@ -3,6 +3,21 @@ angular.module('starter')
 .config(function($stateProvider, $urlRouterProvider) {
 
        $stateProvider
+        .state('devicemotion', {
+        url: '/devicemotion',
+        templateUrl: 'template/device-motion.html',
+        controller:'devicemotionCtrl',
+        })
+        .state('barcode', {
+        url: '/barcode',
+        templateUrl: 'template/barcode.html',
+        controller:'barcodeCtrl',
+        })
+        .state('battery', {
+        url: '/battery',
+        templateUrl: 'template/battery.html',
+        controller:'batteryCtrl',
+        })
         .state('pageone', {
         url: '/pageone',
         templateUrl: 'template/page-one.html',
