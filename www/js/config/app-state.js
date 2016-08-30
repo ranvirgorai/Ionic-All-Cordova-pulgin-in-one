@@ -3,6 +3,11 @@ angular.module('starter')
 .config(function($stateProvider, $urlRouterProvider) {
 
        $stateProvider
+        .state('toast', {
+        url: '/toast',
+        templateUrl: 'template/toast.html',
+        controller:'toastCtrl',
+        })
         .state('devicemotion', {
         url: '/devicemotion',
         templateUrl: 'template/device-motion.html',
