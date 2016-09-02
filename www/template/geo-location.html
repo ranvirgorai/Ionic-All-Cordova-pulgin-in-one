@@ -1,15 +1,62 @@
 <ion-view view-title="My Location">
 	<ion-content scroll="false">
-		<b>Latitude : </b> {{lat.latitude}} => <b>Accuracy :</b>{{lat.accuracy}}<br>
-		<b>longitude: </b>{{lat.longitude}} =>
 
-		<b>Altitude:</b>{{lat.altitude}}<br>
-		<b>Speed: </b>{{lat.speed}} ==>
 
-		<!-- Watch Latitude: {{wlat}}
-		Watch longitude: {{wlong}}-->
-		<b>Error Msg:</b> {{emsg}}
+			<div id="map" ></div>
 
-		<div id="map"></div>
+
+
+
+	<div class = "row responsive-sm" >
+
+
+				<div class = "row" >
+					<div class = "col "><b>Latitude :</b> </div>
+   				<div class = "col">{{lat.latitude}}</div>
+   				</div>
+
+				<div class = "row" >
+				<div class = "col "><b>longitude: </b></div>
+   			<div class = "col">{{lat.longitude}}</div>
+				</div>
+
+				<div class = "row" >
+				<div class = "col "><b>Location Get : </b></div>
+   			<div class = "col">{{lat.speed}}	{{data}}  </div>
+				</div>
+
+
+
+				<div class = "row" >
+				<div class = "col "><b>Distance: </b></div>
+   			<div class = "col">{{lat.distance}}</div>
+				</div>
+
+				<div class = "row" >
+				<div class = "col "><button class="button button-block button-calm" ng-click="startTrip()">Start</button></div>
+   			<div class = "col"><button class="button button-block button-royal" ng-click="stopTrip()">Stop</button></div>
+				</div>
+
+			</div>
+
+
+
+
+<!--
+				<div class = "row" >
+				<div class = "col "><b>Error Msg:</b></div>
+   			<div class = "col"> {{emsg}}</div>
+				</div>
+				<div class = "row" >
+				<div class = "col "><b>Altitude : </b></div>
+   			<div class = "col">{{lat.altitude}}</div>
+				</div> -->
+
+
+
+
+
+</ion-footer-bar>
+
 	</ion-content>
 	</ion-view>

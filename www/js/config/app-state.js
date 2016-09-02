@@ -43,7 +43,7 @@ angular.module('starter')
         templateUrl: 'template/detail-view.html',
         controller:'detailViewCtrl',
         })
-     .state('deviceinfo', {
+        .state('deviceinfo', {
         url: '/deviceinfo',
         templateUrl: 'template/device-info.html',
         controller:'deviceinfoCtrl',
@@ -78,5 +78,5 @@ angular.module('starter')
         templateUrl: 'template/flash.html',
         controller:'flashCtrl',
         });
-        $urlRouterProvider.otherwise('/menu');
+       $urlRouterProvider.otherwise('/menu');
 });

@@ -28,7 +28,8 @@
       "id": "cordova-plugin-flashlight"
     },
     "cordova-plugin-geolocation",
-    "cordova-plugin-console"
+    "cordova-plugin-console",
+    "cordova-plugin-shake"
   ],
   "cordovaPlatforms": [
     "ios",
